@@ -24,7 +24,6 @@
 
 (setq make-backup-files nil)
 (setq auto-save-default nil)
-(setq initial-buffer-choice "~/Org/home.org")
 (setq org-startup-with-inline-images t)
 
 (set-face-attribute 'default nil :height 120)
@@ -34,3 +33,10 @@
 (global-set-key (kbd "C-c c") #'org-capture)
 
 (windmove-default-keybindings)
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+(toggle-scroll-bar -1)
+
+(setq extra-file (concat user-emacs-directory "extra.el"))
+(when (file-exists-p extra-file)
+  (load extra-file :noerror))
