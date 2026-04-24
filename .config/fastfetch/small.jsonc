@@ -29,7 +29,7 @@
             }
         },
         {
-            "type": "os",
+            "type": "os"
         },
         "kernel",
         "memory",
